@@ -28,10 +28,12 @@
     text-decoration: none;
     color: $header-nav-main-color;
     padding: 23px 0;
-  }
-    
-  &__link:hover {
-    color: $header-nav-secondary-color;
+
+    transition: color 1s ease-in-out;
+
+    &:hover {
+      color: $header-nav-secondary-color;
+    }
   }
   
   &__link--is-active {
