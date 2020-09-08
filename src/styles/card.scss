@@ -2,13 +2,22 @@
   width: $cards-width;
   border: 1px solid $border-color;
   border-radius: 5px;
-  background-color: $header-nav-card-background-color;
+  padding: 15px 14px;
 
   &__img {
+    display: block;
+
     width: 160px;
-    height: 134px;
-    margin: 0 5px;
-    margin-bottom: 32px;
+    height: 164px;
+    margin: 0 5px 30px;
+    padding: 15px 0;
+
+    transition: transform 1s ease-in-out;
+  }
+
+  &__img:hover {
+    transform: scale(1.2);
+    outline: 3px solid $border-color;
   }
     
   &__title {
@@ -28,13 +37,6 @@
     justify-content: space-between;
     margin-bottom: 19px;
   }
-
-  &__price {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
   
   &__stars {
     display: flex;
@@ -46,6 +48,13 @@
     margin-right: 4px;
     
     background: url("../images/star.svg") no-repeat center;
+  }
+
+  &__price {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
   
   &__cost {
@@ -69,9 +78,11 @@
     color: $button-text-color;
   
     text-align: center;
-    line-height: 40px;
+    line-height: 39px;
     text-transform: uppercase;
     text-decoration: none;
+
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out;
   }
   
   &__button:hover {

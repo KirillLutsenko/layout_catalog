@@ -28,6 +28,8 @@
     text-decoration: none;
     color: $header-nav-main-color;
     padding: 23px 0;
+
+    transition: color 0.4s ease-in-out;
   }
     
   &__link:hover {
