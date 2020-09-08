@@ -29,11 +29,11 @@
     color: $header-nav-main-color;
     padding: 23px 0;
 
-    transition: color 0.4s ease-in-out;
-  }
-    
-  &__link:hover {
-    color: $header-nav-secondary-color;
+    transition: color 1s ease-in-out;
+
+    &:hover {
+      color: $header-nav-secondary-color;
+    }
   }
   
   &__link--is-active {
