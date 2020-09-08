@@ -2,22 +2,22 @@
   width: $cards-width;
   border: 1px solid $border-color;
   border-radius: 5px;
-  padding: 15px 14px;
+  padding: 15px 14px 14px;
 
   &__img {
-    display: block;
-
-    width: 160px;
+    width: 166px;
     height: 164px;
-    margin: 0 5px 30px;
-    padding: 15px 0;
+    margin: 0 2px 17px;
+    padding: 12px 0;
+    border: 3px solid transparent;
+    border-radius: 5px 5px 0 0;
 
     transition: transform 1s ease-in-out;
   }
 
   &__img:hover {
     transform: scale(1.2);
-    outline: 3px solid $border-color;
+    border-color: $border-color;
   }
     
   &__title {
@@ -70,6 +70,7 @@
     height: 40px;
     border: 1px solid $button-color;
     border-radius: 5px;
+    margin-bottom: 1px;
   
     background-color: $button-color;
   
