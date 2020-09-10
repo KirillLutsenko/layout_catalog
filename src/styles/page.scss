@@ -1,12 +1,8 @@
 .header {
-  margin-bottom: 50px;
   padding: 0 50px;
 }
 
-.main {
-  margin-bottom: 78px;
-}
-
-.card {
-  padding: 30px 14px 14px;
+body {
+  display: grid;
+  grid-gap: $row-gap;
 }

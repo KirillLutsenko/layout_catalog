@@ -1,19 +1,11 @@
-.main {
-  display: flex;
+.cards {
+  display: grid;
+  grid-template-columns: repeat($columns, $cards-width);
   justify-content: center;
-
-  &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: $columns * $cards-width + $margin-between-cards * ($columns - 1);
-  }
-}
-
-.cards__card {
-  margin-bottom: 50px;
-
-  &__card:nth-child(n + 5) {
-    margin-bottom: 0;
+  justify-items: center;
+  grid-gap: $row-gap $column-gap;
+  
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, $cards-width);
   }
 }
