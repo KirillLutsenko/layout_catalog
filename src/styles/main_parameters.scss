@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat($columns, $cards-width);
   justify-content: center;
+  justify-items: center;
   grid-gap: $row-gap $column-gap;
   
   @media (max-width: 1000px) {

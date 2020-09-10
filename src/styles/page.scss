@@ -1,4 +1,8 @@
 .header {
-  margin-bottom: 50px;
   padding: 0 50px;
+}
+
+body {
+  display: grid;
+  grid-gap: 50px;
 }
