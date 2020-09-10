@@ -3,10 +3,6 @@
   grid-template-columns: repeat($columns, $cards-width);
   justify-content: center;
   grid-gap: $row-gap $column-gap;
-
-  &:last-child {
-    margin-bottom: 78px;
-  }
   
   @media (max-width: 1000px) {
     grid-template-columns: repeat(auto-fill, $cards-width);
